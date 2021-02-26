@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { PageNotFoundComponent } from '@core/layout/page-not-found';
 import { HomePageComponent } from '@features/home-page';
 import { ProfileDetailComponent } from '@features/profile/profile-detail';
-import { ProfileListComponent } from '@features/profile/profile-list';
+import { ProfileListComponent } from '@features/profile-list/profile-list';
 
 export const appRoutes: Routes = [
     {

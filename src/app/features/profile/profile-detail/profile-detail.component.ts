@@ -16,9 +16,6 @@ export class ProfileDetailComponent implements OnInit {
     constructor (private store: Store<AppState>) {}
 
     ngOnInit () {
-
         this.store.dispatch(profileActions.initProfile());
-
     }
-
 }

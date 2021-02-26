@@ -5,18 +5,18 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { LayoutModule } from '@core/layout/layout.module';
 import { StoreModule } from '@ngrx/store';
-import { ProfileDetailComponent } from './profile-detail';
-import { getProfileReducer } from './store/profile.reducers';
+import { ProfileListComponent } from './profile-list';
+import { getProfileListReducer } from './store/profile-list.reducers';
 
 @NgModule({
     declarations: [
-        ProfileDetailComponent
+        ProfileListComponent
     ],
     entryComponents: [
-        ProfileDetailComponent
+        ProfileListComponent
     ],
     exports: [
-        ProfileDetailComponent
+        ProfileListComponent
     ],
     imports: [
         CommonModule,
@@ -24,7 +24,8 @@ import { getProfileReducer } from './store/profile.reducers';
         MatCardModule,
         MatDividerModule,
         MatListModule,
-        StoreModule.forFeature('profile', getProfileReducer)
+        StoreModule.forFeature('profile-list', getProfileListReducer)
+        
     ]
 })
-export class ProfileModule { }
+export class ProfileListModule { }
