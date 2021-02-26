@@ -17,4 +17,8 @@ export class ProfileListComponent implements OnInit {
   ngOnInit() {
     this.store.dispatch(profileListActions.initProfileList());
   }
+
+  getDetails(uuid:string){
+    console.log(uuid);
+  }
 }

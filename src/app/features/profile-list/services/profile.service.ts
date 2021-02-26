@@ -14,7 +14,7 @@ export class ProfileService {
   getProfiles(): Observable<UserProfile[]> {
     return this.http
       .get<UserResults>(
-        'https://randomuser.me/api/'
+        'https://randomuser.me/api/?results=10'
       )
       .pipe(map((users) => users.results || []));
   }
